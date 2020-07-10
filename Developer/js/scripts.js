@@ -20,7 +20,7 @@ if (
   age > 25 &&
   age < 44 &&
   experience > 3 &&
-  (skill1 = needed_language || skill2 = needed_language)
+  (skill1 = needed_language || skill2 == needed_language)
 ) {
   console.log("مقبول");
 } else {
@@ -57,3 +57,11 @@ function logHottestDays(input_array, min_value) {
 }
 
 logHottestDays(feh_temp_arry, threshold);
+// -----------3---------------//
+function sumValues() {
+  let num1, num2, res;
+  num1 = Number(document.formcalc.txtnum1.value);
+  num2 = Number(document.formcalc.txtnum2.value);
+  res = num1 + num2;
+  document.formcalc.txtres.value = res;
+}
